@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hollow Edits — Rajan Rathod | Video Editor &amp; Motion Designer</title>
+  <meta name="description" content="Rajan Rathod (Hollow Edits) — video editor &amp; motion designer. High-retention Minecraft &amp; gaming edits, viral creator shorts, and motion design in Premiere Pro &amp; After Effects." />
+  <meta name="theme-color" content="#050507" />
+  <meta property="og:title" content="Hollow Edits — Video Editor &amp; Motion Designer" />
+  <meta property="og:description" content="Edits that hook and retain. Minecraft &amp; gaming edits, viral creator shorts, and motion design in Premiere Pro &amp; After Effects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="media/minecraft.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23050507'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle' fill='%238b5cff'%3EH%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- Intro loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">HOLLOW<em>EDITS</em></span>
+      <span class="loader-count"><b id="loader-num">0</b>%</span>
+    </div>
+    <div class="loader-bar"><i id="loader-bar"></i></div>
+  </div>
+
+  <div class="bg-fx" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <span class="grain"></span>
+  </div>
+  <div id="cursor" aria-hidden="true"><span id="cursor-label">Play</span></div>
+
+  <!-- NAV -->
+  <header id="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="#top" class="brand" aria-label="Hollow Edits home">
+        <span class="brand-mark">H</span>
+        <span class="brand-text">Hollow Edits</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gigs">Gigs &amp; Rates</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm btn-glow" data-magnetic>Hire me</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section id="hero-section" class="hero">
+      <div class="hero-copy">
+        <span class="pill reveal"><i class="dot"></i> Available for new projects</span>
+        <h1 class="hero-title">
+          <span class="line"><span class="word">Short-form</span> <span class="word">edits</span> <span class="word">that</span></span>
+          <span class="line"><span class="word">make</span> <span class="word">people</span> <span class="word serif grad">stop&nbsp;scrolling.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          I'm <strong>Rajan Rathod</strong> a.k.a. <strong>Hollow Edits</strong> — video editor turning raw footage into
+          high-retention gaming edits, viral creator shorts, and kinetic After Effects motion design.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn btn-primary" data-magnetic>
+            <span>Watch my work</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-magnetic>Let's talk</a>
+        </div>
+      </div>
+
+      <!-- 3D carousel -->
+      <div class="carousel reveal" id="carousel" aria-label="Featured edits carousel" data-cursor="drag">
+        <div class="carousel-stage" id="carousel-stage"></div>
+        <div class="carousel-ui">
+          <button class="car-btn" id="car-prev" aria-label="Previous edit">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <div class="car-dots" id="car-dots"></div>
+          <button class="car-btn" id="car-next" aria-label="Next edit">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-wrap" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Gaming &amp; Minecraft Edits</span><b>✦</b><span>High-Retention Shorts</span><b>✦</b><span>Phonk Speed-Ramps</span><b>✦</b><span>Motion Graphics</span><b>✦</b><span>Sound Design</span><b>✦</b><span>Creator Intros</span><b>✦</b>
+          <span>Gaming &amp; Minecraft Edits</span><b>✦</b><span>High-Retention Shorts</span><b>✦</b><span>Phonk Speed-Ramps</span><b>✦</b><span>Motion Graphics</span><b>✦</b><span>Sound Design</span><b>✦</b><span>Creator Intros</span><b>✦</b>
+        </div>
+      </div>
+      <div class="marquee rev">
+        <div class="marquee-track">
+          <span class="out">Hollow Edits</span><b>●</b><span class="out">Premiere Pro</span><b>●</b><span class="out">After Effects</span><b>●</b><span class="out">Reels</span><b>●</b><span class="out">Shorts</span><b>●</b><span class="out">YouTube Gaming</span><b>●</b>
+          <span class="out">Hollow Edits</span><b>●</b><span class="out">Premiere Pro</span><b>●</b><span class="out">After Effects</span><b>●</b><span class="out">Reels</span><b>●</b><span class="out">Shorts</span><b>●</b><span class="out">YouTube Gaming</span><b>●</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats-section">
+      <div class="stat reveal"><b class="count" data-to="5">0</b><span>Featured projects</span></div>
+      <div class="stat reveal"><b class="count" data-to="60" data-suffix="fps">0</b><span>Fluid playback</span></div>
+      <div class="stat reveal"><b class="count" data-to="4" data-suffix="K">0</b><span>Max export master</span></div>
+      <div class="stat reveal"><b>9:16 &amp; 16:9</b><span>Vertical &amp; Landscape</span></div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Real edits,<br /><span class="serif grad">made to hit.</span></h2>
+        <p>Every video below was edited by me. Hover to preview — tap to watch it full screen with sound.</p>
+      </div>
+      <div class="work-grid" id="work-grid"></div>
+      <div class="center reveal">
+        <a href="https://youtube.com/@hollow4u_02" target="_blank" rel="noopener" class="btn btn-ghost" data-magnetic>
+          More on YouTube
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="about-card reveal">
+        <div class="about-visual">
+          <div class="about-orb"></div>
+          <div class="about-mono">HE</div>
+          <span class="about-tag t1">Gaming Pacing</span>
+          <span class="about-tag t2">Viral Shorts</span>
+          <span class="about-tag t3">After Effects</span>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">About</span>
+          <h2>Hey, I'm <span class="serif grad">Rajan.</span></h2>
+          <p>
+            They know me as <strong>Hollow Edits</strong>. I edit videos for creators and channels who need more than
+            just a cut — I make your videos feel alive. Sharp timing, beat-synced transitions, clean typography, sound design,
+            and pacing that keeps retention curves high.
+          </p>
+          <p>
+            From high-octane Minecraft storytelling and gameplay cuts to aggressive phonk speed-ramps, talking-head creator intros, and kinetic After Effects motion — I deliver production-ready assets engineered to perform.
+          </p>
+          <ul class="about-list">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg> Beat-perfect timing &amp; high-retention sound design</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg> Delivered up to 4K / 2K @ 60fps</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg> Optimized for YouTube (Long-form &amp; Shorts), Reels &amp; TikTok</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">What I Do</span>
+        <h2>From raw clips to<br /><span class="serif grad">ready-to-post.</span></h2>
+      </div>
+      <div class="services">
+        <article class="svc spot reveal">
+          <span class="svc-ico">🎮</span>
+          <h3>Gaming &amp; Minecraft Pacing</h3>
+          <p>Multi-cam cuts, comedic timing, zoom dynamics, SFX layering, and narrative arcs that keep viewers hooked till the end.</p>
+        </article>
+        <article class="svc spot reveal">
+          <span class="svc-ico">⚡</span>
+          <h3>Phonk &amp; Speed Ramps</h3>
+          <p>Velocity edits, shakes, motion blur, and color grading synced tight to the beat for maximum adrenaline.</p>
+        </article>
+        <article class="svc spot reveal">
+          <span class="svc-ico">◉</span>
+          <h3>Creator Intros &amp; Hooks</h3>
+          <p>Talking-head cuts with punchy zooms, kinetic captions, and motion graphics that grab attention in the first 3 seconds.</p>
+        </article>
+        <article class="svc spot reveal">
+          <span class="svc-ico">◐</span>
+          <h3>Motion Graphics (After Effects)</h3>
+          <p>Custom shape animations, kinetic typography, lower thirds, and logo stingers crafted natively in AE.</p>
+        </article>
+        <article class="svc spot reveal">
+          <span class="svc-ico">♫</span>
+          <h3>Sound Design &amp; Master Audio</h3>
+          <p>Layered whooshes, impacts, comedic cues, and clean vocal leveling so your audio hits crisp on every device.</p>
+        </article>
+        <article class="svc spot reveal">
+          <span class="svc-ico">▤</span>
+          <h3>Vertical &amp; Landscape Workflows</h3>
+          <p>Native 9:16 safe-zone framing for Shorts/TikTok and 16:9 cinematic pacing for long-form YouTube.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GIGS & RATES -->
+    <section id="gigs" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Packages &amp; Gigs</span>
+        <h2>Transparent rates.<br /><span class="serif grad">Built for fast turnarounds.</span></h2>
+        <p>Whether you need a single viral short, a full long-form Minecraft edit, or a dedicated weekly editing pipeline.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="package-card reveal">
+          <div class="package-head">
+            <h3>Viral Short / Reel</h3>
+            <p>For YouTubers &amp; podcasters wanting 30–60s clips engineered for high algorithmic retention.</p>
+          </div>
+          <div class="package-price">
+            <b>$35</b><span>/ video</span>
+          </div>
+          <ul class="package-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Up to 60s vertical (9:16)</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Custom kinetic animated subtitles</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Punch-in zooms, SFX &amp; b-roll overlay</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> 24-hour turnaround</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> 2 revisions included</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-sm">Order Short</a>
+        </div>
+
+        <div class="package-card featured reveal">
+          <span class="package-badge">Most Popular</span>
+          <div class="package-head">
+            <h3>Minecraft &amp; Gaming Cut</h3>
+            <p>Complete YouTube long-form gaming video with intense pacing, narrative cuts, and sound design.</p>
+          </div>
+          <div class="package-price">
+            <b>$95</b><span>/ video</span>
+          </div>
+          <ul class="package-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> 8–15 min final duration (16:9 1080p/4K)</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Cut from up to 2 hours raw footage</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Comedic zoom dynamics &amp; tracking</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Full sound effects &amp; copyright-free OST</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> 48-hour delivery</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Free 30s teaser short included</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-sm">Order Gaming Edit</a>
+        </div>
+
+        <div class="package-card reveal">
+          <div class="package-head">
+            <h3>Dedicated Weekly Retainer</h3>
+            <p>For high-output creators who need a reliable, dedicated editor ready to pump out uploads every week.</p>
+          </div>
+          <div class="package-price">
+            <b>$280</b><span>/ week</span>
+          </div>
+          <ul class="package-features">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> 2 Long-form videos + 4 Shorts per week</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Priority same-day Discord communication</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Direct timeline project files on demand</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Flexible hours matching your schedule</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg> Unlimited minor revisions</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-sm">Lock Retainer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Process</span>
+        <h2>Simple. Fast.<br /><span class="serif grad">No headache.</span></h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-n">01</span><h3>Send the raw clips</h3><p>Share footage, references and the vibe you want. A Google Drive link or a DM is enough.</p></li>
+        <li class="step reveal"><span class="step-n">02</span><h3>I cut &amp; design</h3><p>Pacing, transitions, sound design, color and motion — all built around your idea.</p></li>
+        <li class="step reveal"><span class="step-n">03</span><h3>Review &amp; tweak</h3><p>You watch the draft, tell me what to change, and I polish it until it feels right.</p></li>
+        <li class="step reveal"><span class="step-n">04</span><h3>Ready to post</h3><p>Final export in 1080p / 4K at 60fps, ready to upload anywhere.</p></li>
+      </ol>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools" class="section tools-section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Production Stack</span>
+        <h2>Mastered in the industry’s<br /><span class="serif grad">two premier powerhouses.</span></h2>
+        <p>No mobile templates or automated shortcuts. 100% precision timeline work inside Adobe Creative Cloud.</p>
+      </div>
+      <div class="tools reveal">
+        <div class="tool">
+          <span class="tool-ico ae">Ae</span>
+          <div class="tool-text">
+            <b>Adobe After Effects</b>
+            <span class="tool-sub">Kinetic typography, motion graphics, VFX compositing &amp; speed ramping</span>
+          </div>
+        </div>
+        <div class="tool">
+          <span class="tool-ico pr">Pr</span>
+          <div class="tool-text">
+            <b>Adobe Premiere Pro</b>
+            <span class="tool-sub">Multi-cam editing, storytelling, narrative pacing &amp; audio master sync</span>
+          </div>
+        </div>
+      </div>
+      <div class="plugins-bar reveal">
+        <span class="plugin-tag">Boris FX Sapphire</span>
+        <span class="plugin-tag">RSMB (Real Smart Motion Blur)</span>
+        <span class="plugin-tag">Deep Glow</span>
+        <span class="plugin-tag">BCC (Continuum)</span>
+        <span class="plugin-tag">Mocha Pro</span>
+        <span class="plugin-tag">Audition Master Audio</span>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Quick <span class="serif grad">answers.</span></h2>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>What kind of videos do you edit?</summary>
+          <p>Long-form gaming and Minecraft videos (pacing, zooms, sound design, multi-cam), viral YouTube Shorts / TikToks / Reels (kinetic captions, fast hook retention), talking-head creator intros, phonk/car speed-ramps, and After Effects motion graphics.</p>
+        </details>
+        <details class="reveal">
+          <summary>What software stack do you use?</summary>
+          <p>Exclusively Adobe Premiere Pro for long-form narrative cutting, multi-cam pacing and sound mixing, and Adobe After Effects for kinetic typography, VFX compositing, speed ramping (RSMB, Sapphire, Deep Glow, BCC).</p>
+        </details>
+        <details class="reveal">
+          <summary>How fast are your turnarounds?</summary>
+          <p>Shorts &amp; Reels are typically delivered in 24 hours. Full long-form gaming edits take 24–48 hours depending on raw footage volume. Because of flexible working hours, rough cuts can be ready when you wake up.</p>
+        </details>
+        <details class="reveal">
+          <summary>What quality do you deliver in?</summary>
+          <p>1080p 60fps standard up to 4K / 1440p 60fps master exports, color-corrected and optimized with faststart web streaming headers.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can you match my channel's existing style?</summary>
+          <p>Yes. Send 2–3 reference links or your previous uploads. I'll match your caption typography, sound palette, and pacing while upgrading viewer retention.</p>
+        </details>
+        <details class="reveal">
+          <summary>How do we get started?</summary>
+          <p>Drop a message below or contact me on Discord / X / Email with a link to your raw footage (Google Drive, Dropbox, or OneDrive). I can do a test cut or jump straight into your schedule.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal spot">
+        <span class="eyebrow">Let's work together</span>
+        <h2>Got footage?<br /><span class="serif grad">Let's make it hit.</span></h2>
+        <p>Tell me about your project and I'll reply as soon as I can.</p>
+
+        <form id="contact-form" class="contact-form" autocomplete="off">
+          <div class="row">
+            <label><span>Your name</span><input type="text" id="cf-name" placeholder="John Doe" required /></label>
+            <label><span>Your email</span><input type="email" id="cf-email" placeholder="you@email.com" required /></label>
+          </div>
+          <label><span>Project details</span><textarea id="cf-msg" rows="4" placeholder="What are we making? Links, length, deadline…" required></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg" data-magnetic>
+            <span>Send message</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+
+        <a class="mail-link" href="mailto:lostsoul706706@gmail.com">lostsoul706706@gmail.com</a>
+
+        <div class="socials">
+          <a href="https://x.com/hollow4u_02" target="_blank" rel="noopener" aria-label="X / Twitter" data-magnetic>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hollow4u_02" target="_blank" rel="noopener" aria-label="Instagram" data-magnetic>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://youtube.com/@hollow4u_02" target="_blank" rel="noopener" aria-label="YouTube" data-magnetic>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+          </a>
+          <a href="mailto:lostsoul706706@gmail.com" aria-label="Email" data-magnetic>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-big" aria-hidden="true">HOLLOW EDITS</div>
+    <div class="footer-row">
+      <span>© <span id="year">2026</span> Rajan Rathod — Hollow Edits. All rights reserved.</span>
+      <a href="#top" id="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-body">
+      <button class="modal-close" data-close aria-label="Close player">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-player">
+        <video id="modal-video" controls playsinline preload="none"></video>
+      </div>
+      <aside class="modal-info">
+        <span class="modal-index" id="modal-index">01</span>
+        <span class="modal-tag" id="modal-tag"></span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <ul class="modal-meta" id="modal-meta"></ul>
+        <div class="modal-actions">
+          <a id="modal-yt" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a href="#contact" class="btn btn-ghost btn-sm" data-close>Hire me</a>
+        </div>
+        <div class="modal-nav">
+          <button id="modal-prev" class="car-btn" aria-label="Previous video"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button id="modal-next" class="car-btn" aria-label="Next video"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
